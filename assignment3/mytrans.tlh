@@ -1,4 +1,16 @@
 %datagroup = (
+               'dest' => "AKT I
+SZENE I. Helsing\x{f8}r. Eine Plattform vor der Burg.
+
+	FRANZISCO an seinem Posten. ??
+
+
+
+
+
+
+
+",
                'src' => 'ACT I
 SCENE I. Elsinore. A platform before the castle.
 
@@ -632,14 +644,6 @@ HORATIO
 
 
 
-
-
-
-',
-               'dest' => 'AKT I
-SZENE I. Elsinore. Eine Plattform vor der Burg.
-
-	FRANCISCO an seinem Posten. ?? asad
 
 
 

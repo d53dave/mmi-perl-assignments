@@ -5,7 +5,7 @@ use WWW::Dict::Leo::Org;
 use Data::Dumper;
 use Tk;
 use Storable;
-use encoding 'utf8';
+use Archive::Tar;
 require Tk::LabFrame;
 require Tk::LabEntry;
 require Tk::FBox;
