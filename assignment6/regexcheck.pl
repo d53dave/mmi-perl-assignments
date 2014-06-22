@@ -50,8 +50,8 @@ sub highlightText
 	{
 		my $result = eval 
 		{
-			my $regex = eval { qr/$regexinput/ };
-			unless ($@){
+			my $regex = eval { qr/$regexinput/ }; #check regex for errors
+			unless ($@){ #if the eval raised no errors, this block will be executed
 				$txt->FindAll(-regexp,-case, $regex);
 				$regexentry->configure(-background => 'white');
 				if ($txt->tagRanges('sel')) 
@@ -63,7 +63,7 @@ sub highlightText
 					}
 				$txt->tagRemove('sel', '1.0', 'end');
 				}
-			} else {
+			} else { #will be executed if the eval block raised an error
 				$regexentry->configure(-background => 'red'); 
 			}
 		}; 
